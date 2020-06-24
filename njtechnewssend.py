@@ -29,13 +29,11 @@ def beauty(soup):
     post.writelines(posthead)
     for i in range(len(d)):
         postline=str(i+1) + ':' + d[i].string + '\n' + '网址为{}'.format(d[i].get('href').replace('..','jwb.njtech.edu.cn')) + '\n'
-        #print(postline)
         post.writelines(postline)
         postlines+=postline
     post.close()
 
     postsend=posthead+postlines
-    #print(postsend)
     return postsend
 
 url='http://jwb.njtech.edu.cn/index/tzgg.htm'
