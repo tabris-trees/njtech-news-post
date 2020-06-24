@@ -43,15 +43,15 @@ html=geth(url)
 soup=BS(html,'html.parser')
 sendpost=beauty(soup)
 
-sender='tabristrees@qq.com'
-pwd='hfmaaifyjcrodhaj'#在开通相关的服务是会给你相应的密码，不是你自己登陆qq的密码
+sender='xxxxxxxxxxx@qq.com'
+pwd='xxxxxxxxxxxxx'#在开通相关的服务是会给你相应的密码，不是你自己登陆qq的密码
 
-receivers=['2858795004@qq.com','3110263088@qq.com']#收件人的邮箱
+receivers=['xxxxxxxx@qq.com','xxxxxxxxxx@qq.com']#收件人的邮箱
 
 #三个参数：第一个为文本内容，第二个为plain设置文本格式，第三个utf-8设置编码
 message=MIMEText(sendpost,'plain','utf-8')
 #标准邮件需要3个头部信息
-message['From']=Header("伍先树",'utf-8')#发件人
+message['From']=Header("XXX",'utf-8')#发件人
 message['To']=Header("所有人",'utf-8')#收件人
 message['Subject']=Header('Njtech教务处网站新闻','utf-8')#邮件标题
 
